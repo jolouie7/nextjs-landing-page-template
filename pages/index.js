@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,8 +16,12 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          Get started by editing{" "}
           <code className={styles.code}>pages/index.js</code>
+          <br />
+          <Link href="/template">
+            <a style={{ color: "#0070f3" }}>To Template Landing Page</a>
+          </Link>
         </p>
 
         <div className={styles.grid}>
@@ -56,10 +61,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
-  )
+  );
 }

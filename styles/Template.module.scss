@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.companyName {
+  font-size: 2rem;
+}
+
+.listGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.listItem {
+  list-style-type: none;
+}
